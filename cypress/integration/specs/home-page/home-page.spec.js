@@ -1,7 +1,7 @@
 const page = require('./home-page.po.js');
 //first experimental basic tests
 
-describe('test implementation try', () =>{
+describe('Home Page experimental basic tests', () =>{
     let homePage;
 
     beforeEach(() => {
