@@ -1,4 +1,4 @@
-class Page {
+class HomePage {
     consoleLog(){
         console.log('it works');
     }
@@ -14,6 +14,10 @@ class Page {
     productsDropdownItems(){
         return cy.get('#menu-mainmenu > li[id*="menu-item"]:first-child > .dropdown-menu > li');
     }
+
+    biobankingLink(){
+        return cy.get('[title="Biobanking LIMS"]');
+    }
 }
 
-module.exports.Page = Page;
+module.exports.HomePage = HomePage;
