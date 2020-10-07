@@ -20,7 +20,7 @@ describe('Home Page experimental basic tests', () =>{
     });
 
     it('first product dropdown item opens new page on click', () => {
-        cy.get(homePage.menuItemProducts()).invoke('show');
+        homePage.menuItemProducts().invoke('show');
         console.log(homePage.biobankingLink());
         homePage.biobankingLink().click({force:true}); //todo: find way around this issue
         cy.url().should('contain', 'features');

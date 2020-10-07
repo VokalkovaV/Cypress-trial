@@ -13,10 +13,10 @@ let biobankingPage;
           cy.get(biobankingPage.downloadBttn).first().should('have.attr', 'target', '_blank');
        });
 
-       it('can be clicked', () =>{
-           cy.get(biobankingPage.downloadBttn).first().click();
-           //todo: find solution for appropriate assert
-       });
+       // it('can be clicked', () =>{
+       //     cy.get(biobankingPage.downloadBttn).first().click();
+       //     //todo: find solution for appropriate assert, but it should be assertion by itself
+       // });
     });
 
     describe('Footer links - ', () =>{
