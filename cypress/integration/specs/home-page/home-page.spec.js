@@ -10,17 +10,17 @@ describe('Home Page experimental basic tests', () =>{
     });
 
     it('product dropdown items container open on hover', () => {
-        cy.get(homePage.menuItemProducts()).invoke('show');
+        cy.get(homePage.getMenuItemProducts()).invoke('show');
     });
 
     it('product dropdown container contains 6 items', () => {
-        homePage.productsDropdownItems().should('have.length', 6);
+        homePage.getProductsDropdownItems().should('have.length', 6);
     });
 
     it('first product dropdown item opens new page on click', () => {
         homePage.menuItemProducts().invoke('show');
-        console.log(homePage.biobankingLink());
-        homePage.biobankingLink().click({force:true}); //todo: find way around this issue
+        console.log(homePage.getBiobankingLink());
+        homePage.getBiobankingLink().click({force:true}); //todo: find way around this issue
         cy.url().should('contain', 'features');
     });
 });

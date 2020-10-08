@@ -2,19 +2,19 @@ import  con from './home-page.con'
 
 class HomePage {
 
-    mainMenu(){
+    getMainMenu(){
         return cy.get(con.mainMenu);
     }
 
-    menuItemProducts(){
-        return this.mainMenu().get(con.menuItemProducts);
+    getMenuItemProducts(){
+        return this.getMainMenu().get(con.menuItemProducts);
     }
 
-    productsDropdownItems(){
+    getProductsDropdownItems(){
         return cy.get(con.productsdropdownItems);
     }
 
-    biobankingLink(){
+    getBiobankingLink(){
         return cy.get(con.bionbankingLink);
     }
 }
