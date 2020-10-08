@@ -1,22 +1,21 @@
+import  con from './home-page.con'
+
 class HomePage {
-    consoleLog(){
-        console.log('it works');
-    }
 
     mainMenu(){
-        return cy.get('#menu-mainmenu');
+        return cy.get(con.mainMenu);
     }
 
     menuItemProducts(){
-        return this.mainMenu().get('[title="Products"]');
+        return this.mainMenu().get(con.menuItemProducts);
     }
 
     productsDropdownItems(){
-        return cy.get('#menu-mainmenu > li[id*="menu-item"]:first-child > .dropdown-menu > li');
+        return cy.get(con.productsdropdownItems);
     }
 
     biobankingLink(){
-        return cy.get('[title="Biobanking LIMS"]');
+        return cy.get(con.bionbankingLink);
     }
 }
 

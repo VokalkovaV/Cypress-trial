@@ -3,10 +3,6 @@ class SeznamPo {
     username = 'tester.acc.cypress';
     password = '123456789abc';
 
-    cookieFrame(){
-        return cy.get('.scmp_Scrollable-content-wrapper');
-    }
-
     loginForm(){
         return cy.get('.login-form');
     }
@@ -44,6 +40,5 @@ class SeznamPo {
         return cy.get('button.search-form__button.button--submit');
     }
 }
-
 
 module.exports.SeznamPo = SeznamPo;

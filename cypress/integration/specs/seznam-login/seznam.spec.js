@@ -9,9 +9,9 @@ describe('Seznam exercise tests', () =>{
    });
 
    describe('Login - ', () =>{
-      // it('login form is displayed', () => {
-      //     seznamPo.loginForm().should('be.visible');
-      // });
+      it('login form is displayed', () => {
+          seznamPo.loginForm().should('be.visible');
+      });
 
       it('user can successfully complete login', () =>{
          seznamPo.usernameInput().type(seznamPo.username);
@@ -19,7 +19,7 @@ describe('Seznam exercise tests', () =>{
          seznamPo.passwordInput().type(seznamPo.password);
          seznamPo.loginSubmitButton().click();
          //fails because of testing 3rd party web login, deny access
-         // todo: Opening in new incognito window for each test because when I log in with some test, I stay logged in.
+         // todo: Opening in new incognito window for each test don´t work, because when I log in with some test, I stay logged in.
       });
    });
 

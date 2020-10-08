@@ -1,5 +1,5 @@
 const page = require('./home-page.po.js');
-//first experimental basic tests
+//todo: discuss solution for export/import
 
 describe('Home Page experimental basic tests', () =>{
     let homePage;
@@ -10,8 +10,6 @@ describe('Home Page experimental basic tests', () =>{
     });
 
     it('product dropdown items container open on hover', () => {
-        console.log(homePage.consoleLog());
-        // homePage.mainMenu();
         cy.get(homePage.menuItemProducts()).invoke('show');
     });
 
