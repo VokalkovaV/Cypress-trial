@@ -1,0 +1,12 @@
+{
+  "username": "tester.acc.cypress",
+  "password": "123456789abc",
+  "loginForm": ".login-form",
+  "usernameInput": ".login-form__input-wrap [name=\"username\"]",
+  "domainSelectOptio": ".login-form__domain select",
+  "passwordInput": ".input-w-button__input-wrap [name=\"password\"]",
+  "loginSubmitButton": ".login-form__line button[type=\"submit\"]",
+  "searchInput": "form[data-dot=\"search-form\"] .search-form__input-wrap",
+  "searchSuggestedList": "searchSuggestedList",
+  "searchSubmitButton": "button.search-form__button.button--submit"
+}

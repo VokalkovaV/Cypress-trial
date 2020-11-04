@@ -14,13 +14,13 @@ describe('Home Page experimental basic tests', () =>{
     });
 
     it('product dropdown container contains 6 items', () => {
-        homePage.getProductsDropdownItems().should('have.length', 6);
+        homePagehomePage.getProductsDropdownItems().should('have.length', 6);
     });
 
     it('first product dropdown item opens new page on click', () => {
-        homePage.menuItemProducts().invoke('show');
-        console.log(homePage.getBiobankingLink());
-        homePage.getBiobankingLink().click({force:true}); //todo: find way around this issue
+        homePagehomePage.menuItemProducts().invoke('show');
+        console.log(homePagehomePage.getBiobankingLink());
+        homePagehomePage.getBiobankingLink().click({force:true}); //todo: find way around this issue
         cy.url().should('contain', 'features');
     });
 });
